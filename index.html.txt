@@ -3,36 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Assinatura</title>
+    <title>Aventura Interativa</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bem-vindo ao Meu Site de Assinatura</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="subscribe.html">Assine Agora</a></li>
-                <li><a href="content.html">Conteúdo Exclusivo</a></li>
-            </ul>
-        </nav>
+        <h1>Aventura Interativa</h1>
     </header>
     <main>
-        <section>
-            <h2>Sobre o Site</h2>
-            <p>Este é um site de assinatura onde você pode acessar conteúdo exclusivo ao assinar nossos planos.</p>
-        </section>
-        <section>
-            <h2>Vantagens da Assinatura</h2>
-            <ul>
-                <li>Acesso a conteúdo exclusivo.</li>
-                <li>Atualizações regulares.</li>
-                <li>Suporte dedicado.</li>
-            </ul>
-        </section>
+        <div id="story">
+            <p id="story-text">Você está em uma floresta escura. Há dois caminhos à sua frente. Para a esquerda, você vê uma luz suave. Para a direita, o caminho é mais sombrio.</p>
+            <button onclick="makeChoice('left')">Ir para a esquerda</button>
+            <button onclick="makeChoice('right')">Ir para a direita</button>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Meu Site de Assinatura. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Aventura Interativa. Todos os direitos reservados.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

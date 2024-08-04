@@ -1,0 +1,19 @@
+function makeChoice(direction) {
+    const storyText = document.getElementById('story-text');
+    const story = document.getElementById('story');
+
+    if (direction === 'left') {
+        storyText.textContent = 'Você segue para a esquerda e encontra uma cabana acolhedora. Você entra e descobre um tesouro escondido! Parabéns, você ganhou!';
+        story.innerHTML += '<br><br><button onclick="restart()">Jogar Novamente</button>';
+    } else if (direction === 'right') {
+        storyText.textContent = 'Você segue para a direita e encontra um buraco no chão. De repente, você cai e se perde na escuridão. Game Over.';
+        story.innerHTML += '<br><br><button onclick="restart()">Jogar Novamente</button>';
+    }
+}
+
+function restart() {
+    const storyText = document.getElementById('story-text');
+    const story = document.getElementById('story');
+    storyText.textContent = 'Você está em uma floresta escura. Há dois caminhos à sua frente. Para a esquerda, você vê uma luz suave. Para a direita, o caminho é mais sombrio.';
+    story.innerHTML += '<br><button onclick="makeChoice(\'left\')">Ir para a esquerda</button> <button onclick="makeChoice(\'right\')">Ir para a direita</button>';
+}
